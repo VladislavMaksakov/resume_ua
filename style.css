@@ -1,0 +1,151 @@
+body,
+header {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar {
+	width: 20%;
+	height: 100%;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#sidebar-content {
+	color: #fff;
+	padding: 20px;
+}
+
+#sidebar-content img {
+	width: 150px;
+	height: auto;
+	border-radius: 50%;
+}
+
+#main-content {
+	margin-left: 20%;
+	padding: 20px;
+	background-color: #fff;
+	flex: 2;
+}
+
+section {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	flex: 1;
+}
+
+.page-title {
+	text-align: center;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.page-title {
+	text-align: center;
+	margin: 0;
+}
+
+.language {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.language p {
+	margin: 0 10px 0 0;
+}
+
+.language img {
+	width: 20px;
+	height: auto;
+	cursor: pointer;
+	/* Добавьте курсор указателя для флага */
+}
+
+#language-dropdown {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: none;
+	width: 120px;
+	z-index: 1;
+}
+
+#language-dropdown li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	padding: 5px 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+#language-dropdown img {
+	width: 20px;
+	height: auto;
+	margin-left: 4px;
+}
+
+#language-dropdown ul {
+	padding: 10px;
+}
+
+#language-dropdown ul li {
+	margin: 5px 0;
+}
+
+#language-dropdown a {
+	text-decoration: none;
+	color: #333;
+}
+
+/* Скройте выпадающий список по умолчанию */
+.hidden {
+	display: none;
+}
+
+#social-icons-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	padding: 10px 0;
+}
+
+#social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#social-icons a {
+	margin: 0 10px;
+	text-decoration: none;
+	transition: transform 0.2s;
+}
+
+#social-icons img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+#social-icons a:hover {
+	transform: scale(1.1);
+}
