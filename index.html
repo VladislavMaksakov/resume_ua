@@ -39,10 +39,9 @@
 			<h1 class="page-title">Trainee/Junior Unity Developer</h1>
 			<div class="language">
 				<div id="language-button">
-					<button id="language-toggle">
-						<span><a href="https://vladislavmaksakov.github.io/resume_EN/" target="_blank">Версія резюме на
-								англійській мові</a></span>
-						<img src="uk.png" alt="Флаг Англії">
+					<button id="language-toggle" onclick="openLink()">
+						<span>Версія резюме на англійській мові</span>
+						<img src="ua.png" alt="Флаг України">
 					</button>
 				</div>
 			</div>
@@ -196,5 +195,10 @@
 			</ul>
 		</section>
 	</div>
-	<script src="script.js"></script>
+	<script>
+		function openLink() {
+			var url = "https://vladislavmaksakov.github.io/resume_EN/";
+			window.open(url, "_blank");
+		}
+	</script>
 </body>
