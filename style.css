@@ -71,7 +71,7 @@ section {
 }
 
 #language-toggle {
-	background-color: #a8b4c0;
+	background-color: rgb(124, 124, 124);
 	/* Цвет фона кнопки */
 	color: #fff;
 	/* Цвет текста на кнопке */
@@ -90,7 +90,7 @@ section {
 }
 
 #language-toggle:hover {
-	background-color: #787e83;
+	background-color: #333;
 	/* Цвет фона при наведении */
 }
 
