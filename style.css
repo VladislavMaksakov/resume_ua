@@ -14,6 +14,13 @@ header {
 	left: 0;
 }
 
+section {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	flex: 1;
+}
+
 #sidebar-content {
 	color: #fff;
 	padding: 20px;
@@ -22,7 +29,6 @@ header {
 #sidebar-content img {
 	width: 150px;
 	height: auto;
-	border-radius: 50%;
 }
 
 #main-content {
@@ -32,15 +38,9 @@ header {
 	flex: 2;
 }
 
-section {
-	margin: 20px;
-	padding: 20px;
-	border: 1px solid #ddd;
-	flex: 1;
-}
-
 .page-title {
 	text-align: center;
+	margin: 0;
 }
 
 .header {
@@ -50,26 +50,80 @@ section {
 	padding: 10px 20px;
 }
 
-.page-title {
-	text-align: center;
-	margin: 0;
-}
-
 .language {
 	display: flex;
 	align-items: center;
 	position: relative;
 }
 
-.language p {
-	margin: 0 10px 0 0;
-}
-
 .language img {
-	width: 20px;
+	width: 25px;
 	height: auto;
 	cursor: pointer;
 	/* Добавьте курсор указателя для флага */
+}
+
+#language-button {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-top: 10px;
+}
+
+#language-toggle {
+	background-color: #a8b4c0;
+	/* Цвет фона кнопки */
+	color: #fff;
+	/* Цвет текста на кнопке */
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Центрирование текста по горизонтали и вертикали */
+	transition: background-color 0.3s;
+}
+
+#language-toggle:hover {
+	background-color: #787e83;
+	/* Цвет фона при наведении */
+}
+
+#language-toggle img {
+	width: 25px;
+	height: auto;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+#download-button {
+	display: block;
+	background-color: #3498db;
+	/* Цвет фона кнопки */
+	color: #fff;
+	/* Цвет текста кнопки */
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+
+#download-button:hover {
+	background-color: #2077c6;
+	/* Цвет фона кнопки при наведении */
+}
+
+#profile-photo {
+	border: 5px solid rgb(124, 124, 124);
+	border-radius: 0;
 }
 
 #language-dropdown {
@@ -101,20 +155,6 @@ section {
 	margin-left: 4px;
 }
 
-#language-dropdown ul {
-	padding: 10px;
-}
-
-#language-dropdown ul li {
-	margin: 5px 0;
-}
-
-#language-dropdown a {
-	text-decoration: none;
-	color: #333;
-}
-
-/* Скройте выпадающий список по умолчанию */
 .hidden {
 	display: none;
 }
